@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Café | Menu Card</title>
+
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff8e7;
+            color: #333;
+            padding: 30px 15px;
+        }
+
+        /* Main Menu Container */
+        .menu-card {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            border: 2px solid #f5c542;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #ffcc33, #ff9f1c);
+            text-align: center;
+            padding: 35px 20px;
+            color: #4a2c00;
+        }
+
+        .header .sun {
+            font-size: 42px;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            margin: 10px 0;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 18px;
+            border: 1px solid #4a2c00;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        /* Welcome Text */
+        .welcome {
+            text-align: center;
+            padding: 25px 15px 10px;
+        }
+
+        .welcome h2 {
+            color: #d97706;
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+
+        .welcome p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* Menu Grid */
+        .menu-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            padding: 25px 35px 35px;
+        }
+
+        /* Menu Category */
+        .category {
+            padding: 20px;
+            background: #fffdf6;
+            border: 1px solid #f4dfaa;
+            border-radius: 12px;
+        }
+
+        .category h3 {
+            color: #b45309;
+            font-size: 20px;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f5c542;
+        }
+
+        /* Individual Menu Item */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 17px;
+        }
+
+        .item-info {
+            flex: 1;
+        }
+
+        .item-name {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .item-desc {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+            line-height: 1.4;
+        }
+
+        .price {
+            font-size: 15px;
+            font-weight: bold;
+            color: #b45309;
+            white-space: nowrap;
+        }
+
+        /* Special Offer */
+        .special {
+            margin: 0 35px 30px;
+            padding: 20px;
+            background: #fff0c2;
+            border: 2px dashed #e9a817;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .special h3 {
+            color: #92400e;
+            margin-bottom: 8px;
+        }
+
+        .special p {
+            font-size: 14px;
+            color: #6b4b16;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            background: #4a2c00;
+            color: #fff8e7;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        .footer h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #ffcc33;
+        }
+
+        .footer p {
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .copyright {
+            margin-top: 15px;
+            font-size: 11px;
+            color: #e4d1a2;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .header h1 {
+                font-size: 30px;
+            }
+
+            .menu-content {
+                grid-template-columns: 1fr;
+                padding: 20px;
+                gap: 18px;
+            }
+
+            .special {
+                margin: 0 20px 25px;
+            }
+
+            .welcome h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu-card">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="sun">☀️</div>
+            <h1>SUNSHINE CAFÉ</h1>
+            <p>GOOD FOOD • GREAT MOOD</p>
+            <div class="tagline">FRESH · TASTY · LOVELY</div>
+        </header>
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h2>Our Delicious Menu</h2>
+            <p>Made with love, served with sunshine!</p>
+        </section>
+
+        <!-- Menu Categories -->
+        <main class="menu-content">
+
+            <!-- Hot Beverages -->
+            <section class="category">
+                <h3>☕ Hot Beverages</h3>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Classic Tea</div>
+                        <div class="item-desc">Freshly brewed Indian tea</div>
+                    </div>
+                    <span class="price">₹20</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Coffee</div>
+                        <div class="item-desc">Rich and aromatic coffee</div>
+                    </div>
+                    <span class="price">₹40</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Hot Chocolate</div>
+                        <div class="item-desc">Creamy chocolate delight</div>
+                    </div>
+                    <span class="price">₹70</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Masala Chai</div>
+                        <div class="item-desc">Tea with aromatic spices</div>
+                    </div>
+                    <span class="price">₹30</span>
+                </div>
+            </section>
+
+            <!-- Cold Beverages -->
+            <section class="category">
+                <h3>🥤 Cold Beverages</h3>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Cold Coffee</div>
+                        <div class="item-desc">Chilled coffee with milk</div>
+                    </div>
+                    <span class="price">₹80</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Fresh Lime Soda</div>
+                        <div class="item-desc">Refreshing sweet or salty soda</div>
+                    </div>
+                    <span class="price">₹50</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Mango Shake</div>
+                        <div class="item-desc">Creamy seasonal mango shake</div>
+                    </div>
+                    <span class="price">₹90</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Chocolate Shake</div>
+                        <div class="item-desc">Thick chocolate milkshake</div>
+                    </div>
+                    <span class="price">₹100</span>
+                </div>
+            </section>
+
+            <!-- Snacks -->
+            <section class="category">
+                <h3>🍔 Snacks & Bites</h3>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Veg Sandwich</div>
+                        <div class="item-desc">Fresh veggies and cheese</div>
+                    </div>
+                    <span class="price">₹70</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">French Fries</div>
+                        <div class="item-desc">Crispy golden potato fries</div>
+                    </div>
+                    <span class="price">₹80</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Veg Burger</div>
+                        <div class="item-desc">Veg patty with fresh toppings</div>
+                    </div>
+                    <span class="price">₹90</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Cheese Garlic Bread</div>
+                        <div class="item-desc">Toasted bread with cheesy garlic</div>
+                    </div>
+                    <span class="price">₹100</span>
+                </div>
+            </section>
+
+            <!-- Desserts -->
+            <section class="category">
+                <h3>🍰 Desserts</h3>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Chocolate Brownie</div>
+                        <div class="item-desc">Rich and fudgy chocolate treat</div>
+                    </div>
+                    <span class="price">₹80</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Chocolate Cake</div>
+                        <div class="item-desc">Soft cake with chocolate frosting</div>
+                    </div>
+                    <span class="price">₹100</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Ice Cream</div>
+                        <div class="item-desc">Choose your favourite flavour</div>
+                    </div>
+                    <span class="price">₹60</span>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Chocolate Waffles</div>
+                        <div class="item-desc">Crispy waffles with chocolate</div>
+                    </div>
+                    <span class="price">₹120</span>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Special Offer -->
+        <section class="special">
+            <h3>🌞 Sunshine Special</h3>
+            <p>
+                Buy any coffee and get 10% off on a dessert!<br>
+                A little sunshine makes everything sweeter.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <h3>Thank You for Visiting!</h3>
+            <p>Good food, warm smiles, happy moments.</p>
+            <p>Visit us again at Sunshine Café.</p>
+            <div class="copyright">
+                &copy; 2026 Sunshine Café. All Rights Reserved.
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
